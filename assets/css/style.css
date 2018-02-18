@@ -1,7 +1,13 @@
+/* globais */
 body {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+
+/* cabeçalho */
 header {
   display: flex;
   justify-content: center;
@@ -12,10 +18,34 @@ header {
   display: flex;
   justify-content: space-between;
 }
-header .logo {
+.logo {
   display: flex;
   align-items: center;
 }
-header .menu {
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu > nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu a {
+  display: block;
+  padding: 15px;
+  color: #727272;
+}
+.menu a:hover,
+.menu a.ativo {
+  background-color: #39aae1;
+  color: white;
+}
 
+/* banner */
+#banner {
+  background-image: url("../images/img.jpg");
+  background-position: center;
+  background-size: cover;
 }
