@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #f7f5f7;
 }
 a {
   text-decoration: none;
@@ -15,11 +16,35 @@ a {
   flex-direction: column;
 }
 
+/* widget */
+.widget > .titulo {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.widget > .titulo > .texto {
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+}
+.widget > .titulo > .barra {
+  width: 50px;
+  height: 3px;
+  background-color: #36a9e1;
+  margin-top: 10px;
+}
+.widget > .corpo {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+}
+
 /* cabeçalho */
 header {
   display: flex;
   justify-content: center;
   height: 120px;
+  background-color: white;
 }
 .logo {
   display: flex;
@@ -112,11 +137,44 @@ header {
   color: white;
   font-size: 13px;
 }
-
 .info-linha {
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+}
+
+/* conteudo */
+#meio {
+  display: flex;
+  justify-content: center;
+}
+#meio section {
+  flex: 2;
+}
+#meio aside {
+  flex: 1;
+}
+#departamentos .retangulo {
+  width: 150px;
+  height: 150px;
+  background-color: #03a2df;
+  margin-bottom: 30px;
+}
+#consulta .info {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+#consulta .contato {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+#consulta .contato > img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  padding: 2px;
+  background-color: #DDD;
 }
