@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 /* globais */
 body {
   margin: 0;
   padding: 0;
   background-color: #f7f5f7;
+  font-family: "Roboto";
 }
 a {
   text-decoration: none;
@@ -227,4 +230,56 @@ header {
 }
 #consulta .contato a:hover {
   text-decoration-style: solid;
+}
+
+/* rodape */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+}
+footer .menu-rodape {
+  display: flex;
+  flex: 1;
+}
+.menu-1,
+.menu-2,
+.menu-3 {
+  flex: 1;
+  color: white;
+  padding: 30px;
+}
+.menu-1 {
+  background-color: #39aae1;
+}
+.menu-2 {
+  background-color: #0079c7;
+}
+.menu-3 {
+  background-color: #2b4c99;
+}
+.menu-rodape .titulo-menu {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.menu-rodape .texto-menu {
+  font-size: 14px;
+}
+footer .area {
+  display: flex;
+  color: white;
+}
+footer .area > .item {
+  flex: 1;
+}
+footer .widget > .titulo > .texto {
+  color: white;
+}
+footer .copyright {
+  border-top: 1px solid #2c2c2c;
+  color: #5c5c5c;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 30px;
 }
