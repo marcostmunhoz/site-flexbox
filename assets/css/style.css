@@ -310,7 +310,17 @@ footer .copyright {
     justify-content: space-around;
   }
   .menu > nav > ul {
-    display: none;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    transition: height .5s;
+  }
+  .visivel {
+    height: 343px !important;
   }
   #banner {
     height: auto;
