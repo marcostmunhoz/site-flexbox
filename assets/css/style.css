@@ -57,6 +57,19 @@ header {
   display: flex;
   align-items: center;
 }
+.menu > .menu-mobile {
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-right: 20px;
+  padding: 5px 8px;
+}
+.menu > .menu-mobile > div {
+  height: 3px;
+  background-color: #39aae1;
+}
 .menu > nav > ul {
   display: flex;
   list-style-type: none;
@@ -282,4 +295,57 @@ footer .copyright {
   height: 40px;
   line-height: 40px;
   margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: auto;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .menu > .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .menu > nav > ul {
+    display: none;
+  }
+  #banner {
+    height: auto;
+  }
+  .titulo-banner {
+    padding: 20px;
+  }
+  .info-banner {
+    height: auto;
+  }
+  .titulo-banner > h1 {
+    padding-top: 20px;
+    font-size: 55px;
+  }
+  .titulo-banner > h2 {
+    font-size: 17px;
+    padding-bottom: 20px;
+  }
+  #meio section,
+  #meio aside {
+    padding: 20px;
+  }
+  footer .area {
+    padding: 20px;
+  }
+  .copyright {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menu > nav > ul,
+  #banner .container,
+  .info-banner,
+  #meio .container,
+  .menu-rodape,
+  footer .area {
+    flex-direction: column;
+  }
 }
